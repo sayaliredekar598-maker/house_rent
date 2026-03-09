@@ -1,0 +1,140 @@
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+.property-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 2rem;
+}
+
+@media (max-width: 900px) {
+  .property-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.property-detail-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.property-detail-images img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.property-detail-image-placeholder {
+  grid-column: 1 / -1;
+  aspect-ratio: 16/6;
+  background: var(--surface-hover);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: var(--radius);
+}
+
+.property-detail-image-placeholder .placeholder-icon {
+  font-size: 2.5rem;
+  color: var(--text-muted);
+  opacity: 0.5;
+}
+
+.property-detail-image-placeholder .placeholder-text {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.property-detail-body {
+  padding: 1.5rem;
+}
+
+.property-detail-body .badge {
+  margin-bottom: 0.75rem;
+}
+
+.property-detail-body h1 {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.property-rent-lg {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.property-location-lg {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-size: 0.9375rem;
+}
+
+.property-meta-lg {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9375rem;
+}
+
+.property-detail-body h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+}
+
+.amenities ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.amenities li {
+  background: var(--surface-hover);
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+}
+
+.description p {
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+}
+
+.property-detail-sidebar {
+  padding: 1.5rem;
+  height: fit-content;
+  position: sticky;
+  top: 80px;
+}
+
+.property-detail-sidebar h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.property-detail-sidebar p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9375rem;
+}
+
+.error-msg {
+  color: var(--danger);
+  margin-bottom: 1rem;
+}
