@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # House Rent System
 
 A full-stack **House Rent System** built with **Node.js**, **React**, and **MongoDB** for MCA Final Year Project.
@@ -227,3 +228,6 @@ VITE_API_URL=http://localhost:5000/api
 ## 📄 License
 
 For educational use (MCA Final Year Project).
+=======
+# house_rent_project
+>>>>>>> a5d9827b319821c41aa6ec896d5da3f75bfda099
